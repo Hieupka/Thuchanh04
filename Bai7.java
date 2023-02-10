@@ -6,7 +6,7 @@ public class Bai7 {
     public static void main(String args[]) {
         PhanSo ps1 = new PhanSo();
         PhanSo ps2 = new PhanSo();
-        PhanSo Tong, Hieu, Tich, Thuong, DoiDau;
+        PhanSo Tong, Hieu, Tich, Thuong, DoiDau, NghichDao;
         System.out.println("Nhap phan so 1: ");
         ps1.nhap();
         System.out.println("Nhap phan so 2: ");
@@ -37,8 +37,12 @@ public class Bai7 {
         Thuong.toiGianPS();
         Thuong.display();
 
+        NghichDao = ps1.nghichDao();
+        System.out.print("\nPhan so 1 nghich dao = ");
+        NghichDao.display();
+
         DoiDau = ps1.doiDau();
-        System.out.print("\nPhan 1 so sau khi doi dau = ");
+        System.out.print("\nPhan so 1 sau khi doi dau = ");
         DoiDau.toiGianPS();
         DoiDau.display();
 
